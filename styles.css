@@ -1,0 +1,84 @@
+html {
+
+    --mainBgColor: #817166;
+    --secondaryColor: #201D1A;
+    --textColor: white;
+    --lightColor: #E0C3B1;
+    --bgColor: #EBE7E5;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var( --textColor );
+    font-family: sans;
+}
+
+
+nav {
+    background: var( --mainBgColor );
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    font-style: italic;
+}
+
+.navLogo {
+
+    font-size: 25px;
+    font-family: "EB Garamond";
+
+}
+
+.navLinks {
+    display: flex;
+}
+
+.navLink {
+    padding: 5px 15px;
+    text-transform: capitalize;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.1s ease-out;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.2);
+}
+
+.mainSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImage {
+    width: 100%;
+    height: calc( 100vh - 70px );
+    max-height: calc( 60vw );
+    opacity: 0.9;
+}
+
+.mainTitle {
+    background: rgba(32, 29, 26, 0.9);
+    top: 250px;
+    padding: 30px;
+    width: 950px;
+    font-family: "Oswald";
+    font-size: 80px;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+}
+
+.clothingSec {
+    display: flex;
+    background: var( --lightColor );
+    height: 100vh;
+    width: 100%;
+}
